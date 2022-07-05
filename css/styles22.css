@@ -31,9 +31,14 @@ body{
 }
 
 .header{
+    width: 100%;
+}
+
+header{
     position: sticky;
     top: 0;
-    width: 100%;
+    background: rgb(255, 243, 235);
+    z-index: 1100;
 }
 
 .logo-{
@@ -207,21 +212,20 @@ body{
     }
     }
 
-/* carousel */
-    .cards-wrapper {
-        display: flex;
-        justify-content: center;
-      }
+/* squig */
+.squig{
+    display: flex;
+    justify-content: center;
+}
+
+/* image strips */
+
       .card img {
         max-width: 100%;
         width: auto;
         height: auto;
         vertical-align: middle;
       }
-
-      .carousel-inner > .item > a > img,  .carousel-inner > .item > img {
-        width: 100%;
-    } 
 
       .card {
         margin: 0 0.5em;
@@ -248,9 +252,51 @@ body{
           height: 19em;
         }
       }
-
-      .carousel .almond{
-        margin-right: 10px;
-      }
     
 
+    .btn{
+        background-color: #d4a393;
+        color: white;
+        border-color: #d4a393;
+        margin-bottom: 1rem;
+      }
+    .btn:focus{
+        color: white;
+        box-shadow: none;
+    }
+    .btn:hover{
+        border-color: #d4a393;
+        color: white;
+    }
+
+    .texts{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+ 
+/* almond */
+
+.almond .cards-wrapper {
+    display: flex;
+    justify-content: left;
+  }
+
+/* toto */
+.toto {
+    justify-content: right;
+}
+.toto .cards-wrapper {
+    display: flex;
+    justify-content: right;
+  }
+
+  /* snoopy */
+.snoopy {
+    justify-content: left;
+}
+.snoopy .cards-wrapper {
+    display: flex;
+    justify-content: left;
+  }
