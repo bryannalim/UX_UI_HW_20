@@ -28,36 +28,49 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nunito:wght@300&family=Poppins&display=swap" rel="stylesheet">
 
 	<!-- YOUR styles for this template -->
-	<link href="css/styles3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 
 </head>
 
 <body>
 	<header>
-		<!-- Logo -->
-		<a class="logo-" href="#">
-			<img class="logo" src="./images/66771.png">Bark Bark!
-		</a>
-		<!-- Hamburger icon -->
-		<input class="side-menu" type="checkbox" id="side-menu" />
-		<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-		<!-- Menu -->
-		<nav class="nav">
-			<ul class="menu">
-				<li class="menu--item"><a href="#almonds">Almond</a></li>
-				<li class="menu--item"><a href="#totos">Toto</a> </li>
-				<li class="menu--item"><a href="#snoopys">Snoopy</a></li>
-				<li class="menu--item"><a href="#jinjoos">Jinjoo</a></li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<a class="logo-" href="#">
+				<img class="logo" src="./images/66771.png">Bark Bark!
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#almonds">Almond</a>
+				  </li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#totos">Toto</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#snoopys">Snoopy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#jinjoos">Jinjoo</a>
+				  </li>
+			  </ul>
+			</div>
+		  </nav>
 	</header>
 
-
+<!-- HERO -->
 	<div class="heroo mb-5 text-center">
 		<div class="heroo-text col-lg-6 mx-auto">
 			<h1 class="display-5 fw-bold">baby world</h1>
 			<p class="lead mb-4">everything you need to know about brie's lil fur babies</p>
 		</div>
+	</div>
+
+	<!-- PS -->
+	<div class="mt-5 text-center">
+		<p>p.s. click on our names!</p>
 	</div>
 
 	<!-- SQUIG BREAK -->
@@ -66,14 +79,14 @@
 	</div>
 
 	<!-- ALMOND -->
-	<section id="almond" class="box m-5 toto">
-		<div class="snoopy texts float-right">
+	<section class="pb-3 pl-1 pr-1 w-100 almond">
+		<div class="texts">
 			<button type="button" class="ppvr btn btn-lg" data-toggle="popover"  data-content="blep">Almond</button>
-			<p>The cutest little smiley dumb doggo you’ll ever meet!</p><p>He’s smol n fluffy and has an almond shaped patch of fur on his head.</p>
+			<p>The cutest little smiley dumb doggo you’ll ever meet! He’s smol n fluffy and has an almond shaped patch of fur on his head.</p>
 			<p>Likes: Mangoes, Going Upstairs, Sleeping on Shoes, Toto</p>
 			<p>Dislikes: Coughing, Butt Wipes, Being away from Toto</p>
 		</div>
-		<div class="almond test float-left">
+		<div class="test d-flex justify-content-center">
 			<img src="../images/a1.jpg" class=" " alt="...">
 			<img src="../images/a5.jpg" class=" " alt="...">
 			<img src="../images/a8.jpg" class=" " alt="...">
@@ -85,55 +98,57 @@
 		<img src="../images/liney.png" alt="">
 	</div>
 
-	<!--  TOTO -->
-	<section id="toto" class="box m-5 toto">
-		<div class="toto texts">
+	<!-- TOTO -->
+	<section class="pb-3 pl-1 pr-1 w-100 toto">
+		<div class="texts">
 			<button type="button" class="ppvr btn btn-lg" data-toggle="popover"  data-content="bork bork">Toto</button>
 			<p>Tiny old man with lots of sass. Gets scared easily and loves being babied.</p>
 			<p>Likes: Barking at everything, Human Food, Getting brushed, Being carried</p>
 			<p>Dislikes: Loud noises, Closets, Fireworks</p>
 		</div>
-		<div class="toto test float-right">
+		<div class="test d-flex justify-content-center">
 			<img src="../images/t1.jpg" class=" " alt="...">
 			<img src="../images/t5.jpg" class=" " alt="...">
 			<img src="../images/t3.jpg" class=" " alt="...">
 		</div>
 	</section>
 
+
 	<!-- SQUIG BREAK -->
 	<div id="snoopys" class="squig">
 		<img src="../images/liney.png" alt="">
 	</div>
 
-	<!--  SNOOPY -->
-	<section id="snoopys" class="box m-5 toto">
-		<div class="snoopy texts float-right">
+	<!-- SNOOPY -->
+	<section class="pb-3 pl-1 pr-1 w-100 almond">
+		<div class="texts">
 			<button type="button" class="ppvr btn btn-lg" data-toggle="popover"  data-content="weeee">Snoopy</button>
-			<p>Goofy lil weiner with emo hair who’s always ready for fun and play.</p><p>Very high energy n very lovable.</p>
+			<p>Goofy lil weiner with emo hair who’s always ready for fun and play. Very high energy n very lovable.</p>
 			<p>Likes: My aunt, Teasing Toto, Having fun in the sun</p>
 			<p>Dislikes: Haircuts, Being home alone</p>
 		</div>
-		<div class="toto test float-left">
+		<div class="test d-flex justify-content-center">
 			<img src="../images/s2.jpg" class=" " alt="...">
 			<img src="../images/s1.jpg" class=" " alt="...">
 			<img src="../images/s4.jpg" class=" " alt="...">
 		</div>
 	</section>
 
+
 	<!-- SQUIG BREAK -->
 	<div id="jinjoos" class="squig">
 		<img src="../images/liney.png" alt="">
 	</div>
 
-	<!--  Jinjoo -->
-	<section id="jinjoos" class="box m-5 toto">
-		<div class="toto texts">
+	<!-- JINJOO -->
+	<section class="pb-3 pl-1 pr-1 w-100 toto">
+		<div class="texts">
 			<button type="button" class="ppvr btn btn-lg" data-toggle="popover"  data-content=":p">Jinjoo</button>
 			<p>Curious, protective, and stinky little lady with lots of anxiety and weird habits.</p>
-			<p>Likes: Begging for food, Peeing, Aggressive petting, Curling into a donut</p>
+			<p>Likes: Begging for food, Peeing, Aggressive petting, Curling into a jin-donut</p>
 			<p>Dislikes: Loud noises, Being carried, New spaces</p>
 		</div>
-		<div class="toto test float-right">
+		<div class="test d-flex justify-content-center">
 			<img src="../images/jj1.jpg" class=" " alt="...">
 			<img src="../images/jj3.jpg" class=" " alt="...">
 			<img src="../images/jj6.jpg" class=" " alt="...">
@@ -144,6 +159,12 @@
 	<div class="squig">
 		<img src="../images/liney.png" alt="">
 	</div>
+
+	<!-- END -->
+	<div class="m-5 text-center">
+		<p>Thanks! You've reached the end.</p>
+	</div>
+
 
 	<!-- <script src="js/template.js"></script> -->
 	<script src="js/index.js"></script>

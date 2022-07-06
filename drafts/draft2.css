@@ -9,10 +9,10 @@ body{
     color: rgb(82, 82, 82);
     display: block;
     font-family: 'Nunito', sans-serif;
-    /* background-color: rgb(226, 235, 250); */
-    /* background: linear-gradient(rgb(220, 230, 249),rgb(243, 246, 251)); */
     background: rgb(255, 243, 235);
     min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
     margin: 0;
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -247,49 +247,55 @@ header{
 
 /* test   */
 .test{
-    display: inline-block;  
-    margin-left: 3rem;
-    margin-right:3rem;
+    display: inline-block;
+    flex-wrap: wrap;
   }
 
 .test img{
     max-width: 300px;
     border-radius: 5%;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
 }
-/* almond */
+
 .almond{
-    justify-content: left;
-    display: inline-block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
-.snoopy .texts{
-    float: right;
+section .texts{
+    flex-grow: 1;
+    margin-right: 1rem;
 }
+
+section .test{
+    flex-grow: 1;
+}
+/* almond */
+/* .almond{
+    justify-content: left;
+    display: inline-block;
+} */
+
+/* .snoopy .texts{
+    float: right;
+} */
 
 
 /* toto */
-.toto {
+/* .toto {
     justify-content: right;
     display: inline-block;
-}
+} */
 
   /* snoopy */
 .snoopy {
     justify-content: left;
 }
 
-@media (max-width: 800px;){
-    *{
-        display: flex;
-        justify-content: center;
-        align-items: center;}
-    .test img{
-        display: block;
-        margin: 0 auto;}
-    .texts{
-        float:none;
+@media (max-width: 1040px){
+    .almond{
+        flex-direction: column;
     }
     }
